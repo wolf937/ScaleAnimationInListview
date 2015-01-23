@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffe1e0dc"
+    android:orientation="vertical">
+
+
+    <com.github.lorcan.scale.MyScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/parent_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <com.github.lorcan.scale.MyHeaderView
+                android:id="@+id/headerView"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.github.lorcan.scale.ListViewInScollView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+    </com.github.lorcan.scale.MyScrollView>
+
+
+    <!--<com.github.lorcan.scale.MyListView-->
+    <!--android:id="@+id/listView"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <!--</com.github.lorcan.scale.MyListView>-->
+
+
+    <RelativeLayout
+        android:id="@+id/header_icon_layout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:visibility="gone">
+
+        <com.github.lorcan.scale.CircleImageView
+            android:id="@+id/header_icon"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/icon_header" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
